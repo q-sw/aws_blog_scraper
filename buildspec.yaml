@@ -1,0 +1,29 @@
+version: 0.2
+
+env:
+  shell: /bin/sh
+  variables:
+    IMAGE_VERSION: "1.0"
+  
+phases:
+  pre_build:
+    commands:
+      - echo $IMAGE_NAME
+      - echo $IMAGE_VERSION
+      - echo Connexion a Amazon ECR...
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker build -t $IMAGE_NAME:$IMAGE_VERSION .
+      - docker tag $IMAGE_NAME:$IMAGE_VERSION $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_NAME:$IMAGE_VERSION
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_NAME:$IMAGE_VERSION
+    finally:
+      - aws ecr-public get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin public.ecr.aws/v1w0r9e7
+      - docker tag $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_NAME:$IMAGE_VERSION public.ecr.aws/v1w0r9e7/$IMAGE_NAME:$IMAGE_VERSION
+      - docker push public.ecr.aws/v1w0r9e7/$IMAGE_NAME:$IMAGE_VERSION

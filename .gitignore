@@ -127,3 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+perso_secret.txt

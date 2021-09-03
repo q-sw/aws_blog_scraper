@@ -1,0 +1,348 @@
+{
+	"blogs": [
+		{
+			"url": "https://aws.amazon.com/fr/blogs",
+			"language": "en",
+			"categories": [
+				{
+					"category": "architecture",
+					"fetch": true
+				},
+				{
+					"category": "aws-cost-management",
+					"fetch": true
+				},
+				{
+					"category": "apn",
+					"fetch": false
+				},
+				{
+					"category": "awsmarketplace",
+					"fetch": false
+				},
+				{
+					"category": "aws",
+					"fetch": true
+				},
+				{
+					"category": "big-data",
+					"fetch": false
+				},
+				{
+					"category": "business-productivity",
+					"fetch": false
+				},
+				{
+					"category": "compute",
+					"fetch": true
+				},
+				{
+					"category": "contact-center",
+					"fetch": false
+				},	
+				{
+					"category": "containers",
+					"fetch": true
+				},
+				{
+					"category": "database",
+					"fetch": true
+				},
+				{
+					"category": "desktop-and-application-streaming",
+					"fetch": false
+				},
+				{
+					"category": "developer",
+					"fetch": true
+				},
+				{
+					"category": "devops",
+					"fetch": true
+				},
+				{
+					"category": "enterprise-strategy",
+					"fetch": true
+				},
+				{
+					"category": "mobile",
+					"fetch": false
+				},
+				{
+					"category": "gametech",
+					"fetch": false
+				},
+				{
+					"category": "hpc",
+					"fetch": true
+				},
+				{
+					"category": "infrastructure-and-automation",
+					"fetch": true
+				},
+				{
+					"category": "industries",
+					"fetch": false
+				},
+				{
+					"category": "iot",
+					"fetch": false
+				},
+				{
+					"category": "machine-learning",
+					"fetch": false
+				},
+				{
+					"category": "mt",
+					"fetch": true
+				},
+				{
+					"category": "media",
+					"fetch": false
+				},
+				{
+					"category": "messaging-and-targeting",
+					"fetch": true
+				},
+				{
+					"category": "networking-and-content-delivery",
+					"fetch": true
+				},
+				{
+					"category": "opensource",
+					"fetch": true
+				},
+				{
+					"category": "publicsector",
+					"fetch": false
+				},
+				{
+					"category": "quantum-computing",
+					"fetch": false
+				},
+				{
+					"category": "robotics",
+					"fetch": false
+				},
+				{
+					"category": "awsforsap",
+					"fetch": false
+				},
+				{
+					"category": "security",
+					"fetch": true
+				},
+				{
+					"category": "startups",
+					"fetch": true
+				},
+				{
+					"category": "storage",
+					"fetch": true
+				},
+				{
+					"category": "training-and-certification",
+					"fetch": true
+				},
+				{
+					"category": "modernizing-with-aws",
+					"fetch": false
+				} 
+			] 
+		},
+		{
+			"url": "https://aws.amazon.com/fr/blogs/france/category",
+			"language": "fr",
+			"categories": [
+				{
+					"category": "alexa",
+					"fetch": false
+				},
+				{
+					"category": "analytics",
+					"fetch": false
+				},
+				{
+					"category": "application-integration",
+					"fetch": false
+				},
+				{
+					"category": "architecture",
+					"fetch": true	
+				},
+				{
+					"category": "ar-vr",
+					"fetch": false
+				},
+				{
+					"category": "aws-cost-management",
+					"fetch": true
+				},
+				{
+					"category": "software",
+					"fetch": false
+				},
+				{	
+					"category": "aws-partner-network",
+					"fetch": false
+				},
+				{	
+					"category": "aws-well-architected",
+					"fetch": false
+				},
+				{	
+					"category": "big-data",
+					"fetch": false
+				},
+				{
+					"category": "business-productivity",
+					"fetch": false
+				},
+				{
+					"category": "compute",
+					"fetch": true
+				},
+				{
+					"category": "containers",
+					"fetch": true
+				},
+				{	
+					"category": "customer-enablement",
+					"fetch": false
+				},
+				{
+					"category": "messaging",
+					"fetch": false
+				},
+				{
+					"category": "database",
+					"fetch": false
+				},
+				{
+					"category": "developer-tools",
+					"fetch": true
+				},
+				{
+					"category": "devops",
+					"fetch": true
+				},
+				{
+					"category": "desktop-app-streaming",
+					"fetch": false
+				},
+				{
+					"category": "enterprise-strategy",
+					"fetch": true
+				},
+				{	"category": "mobile-services",
+					"fetch": false
+				},
+				{	"category": "game-development",
+					"fetch": false
+				},
+				{	"category": "high-performance-computing",
+					"fetch": false
+				},
+				{
+					"category": "industries",
+					"fetch": false
+				},
+				{	"category": "infrastructure-automation",
+					"fetch": true
+				},
+				{
+					"category": "internet-of-things",
+					"fetch": false
+				},
+				{
+					"category": "artificial-intelligence",
+					"fetch": false
+				},
+				{
+					"category": "mainframe-and-legacy",
+					"fetch": false
+				},
+				{
+					"category": "management-tools",
+					"fetch": true
+				},	 
+				{
+					"category": "media-services",
+					"fetch": false
+				},
+				{
+					"category": "messaging-and-targeting",
+					"fetch": false
+				},
+				{
+					"category": "migration",
+					"fetch": true
+				},
+				{
+					"category": "networking-content-delivery",
+					"fetch": true
+				},
+				{
+					"category": "news",
+					"fetch": true
+				},
+				{
+					"category": "open-source",
+					"fetch": true
+				},
+				{
+					"category": "price-reduction",
+					"fetch": false
+				},
+				{
+					"category": "public-sector",
+					"fetch": false
+				},
+				{
+					"category": "quantum-technologies",
+					"fetch": false
+				},
+				{
+					"category": "robotics",
+					"fetch": false
+				},
+				{
+					"category": "security-identity-compliance",
+					"fetch": true
+				},
+				{
+					"category": "serverless",
+					"fetch": true
+				},
+				{
+					"category": "startup",
+					"fetch": true
+				},
+				{	
+					"category": "storage",
+					"fetch": true
+				},
+				{	
+					"category": "sustainability",
+					"fetch": false
+				},
+				{	
+					"category": "aws-training-and-certification",
+					"fetch":false
+				},
+				{
+					"category": "modernizing-with-aws",
+					"fetch": false
+				}
+			]
+		}
+	],
+	"backup_result": false,
+	"backup_destination": {
+		"type": "",
+		"file_name": "",
+		"path": ".",
+		"bucket_name": "" 
+	},
+	"limit_scrap_day": 7
+}
