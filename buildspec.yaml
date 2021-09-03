@@ -24,6 +24,6 @@ phases:
       - echo Pushing the Docker image...
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_NAME:$IMAGE_VERSION
     finally:
-      - aws ecr-public get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin public.ecr.aws/v1w0r9e7
+      - aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/v1w0r9e7
       - docker tag $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_NAME:$IMAGE_VERSION public.ecr.aws/v1w0r9e7/$IMAGE_NAME:$IMAGE_VERSION
       - docker push public.ecr.aws/v1w0r9e7/$IMAGE_NAME:$IMAGE_VERSION
