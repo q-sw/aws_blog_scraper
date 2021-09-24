@@ -55,7 +55,7 @@ def upload_result(url_endpoint, access_key, secret_key, bucket_name, file_path, 
                     aws_access_key_id=access_key,
                     aws_secret_access_key=secret_key,
                     config=Config(signature_version='s3v4'),
-                    region_name='us-east-1')
+                    region_name='default')
 	try:
 		s3.Bucket(bucket_name).upload_file(file_path, file_name)
 		return("")
@@ -81,9 +81,10 @@ def main():
 			json.dump(all_article, result, indent=4)
 
 		if config.get('backup_destination').get('type') == "S3":
-			BUCKET_NAME = config.get('backup_destination').get('backet_name')
+			BUCKET_NAME = config.get('backup_destination').get('bucket_name')
 			upload_result(URL_ENDPOINT, ACCESS_KEY, SECRET_KEY, BUCKET_NAME, file_path, file_name)
 	else:
 		pprint(all_article)
 if __name__ == "__main__" :
 	main()
+
